@@ -1,19 +1,25 @@
 .convertor {
   margin-top: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 
   &__value {
-    font-size: 2rem;
-    width: 200px;
+    font-size: 1.8rem;
+    width: 150px;
   }
 
   &__symbol {
-    font-size: 2.5rem;
+    width: 150px;
+    font-size: 1.8rem;
   }
 
   &__btn {
-    font-size: 2.5rem;
+    padding: 5px 15px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 3px;
   }
 
   &__result {

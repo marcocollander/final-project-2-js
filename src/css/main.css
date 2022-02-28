@@ -43,18 +43,24 @@ body {
 
 .convertor {
   margin-top: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
 .convertor__value {
-  font-size: 2rem;
-  width: 200px;
+  font-size: 1.8rem;
+  width: 150px;
 }
 .convertor__symbol {
-  font-size: 2.5rem;
+  width: 150px;
+  font-size: 1.8rem;
 }
 .convertor__btn {
-  font-size: 2.5rem;
+  padding: 5px 15px;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 3px;
 }
 .convertor__result {
   font-size: 2rem;
