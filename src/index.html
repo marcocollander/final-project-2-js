@@ -10,26 +10,32 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <img class="header__logo" src="./images/bitcoin.jpg" alt="bitcoin" width="150" height="150">
-      <h1 class="header__heading">Przelicznik walut</h1>
-    </header>
+<div class="wrapper">
+  <header class="header">
+    <img class="header__logo" src="./images/bitcoin.jpg" alt="bitcoin" width="150" height="150">
+    <h1 class="header__heading">Przelicznik walut</h1>
+  </header>
 
-    <section class="convertor">
-      <input class="convertor__value" type="text">
+  <form class="form">
+    <fieldset class="form__border">
+      <legend class="form__description">Wybierz symbol waluty</legend>
+      <section class="convertor">
+        <input class="convertor__value" type="text">
+        <select class="convertor__symbol" name="convertorSymbol" id="convertorSymbol">
+          <option value="euro">EUR</option>
+          <option value="dolar">USD</option>
+          <option value="frank">CHF</option>
+        </select>
 
-      <select class="convertor__symbol" name="convertorSymbol"  id="convertorSymbol">
-        <option value="">EUR</option>
-        <option value="">$</option>
-        <option value="">FR</option>
-        <option value="">CHF</option>
-      </select>
+        <button class="convertor__btn" type="submit">Przelicz</button>
 
-      <button class="convertor__btn" type="button">Przelicz</button>
-      <p class="convertor__result">To jest tyle złoty</p>
-    </section>
-  </div>
+        <p class="convertor__result">To jest tyle złoty</p>
+      </section>
+    </fieldset>
+
+  </form>
+
+</div>
 </body>
 
 </html>
