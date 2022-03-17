@@ -1,44 +1,130 @@
 .form {
+  margin-bottom: 25px;
+
   &__border {
     border: 2px solid brown;
-    padding: 30px;
+    padding: 20px;
   }
-  &__description {
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
 
+  &__description {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
-
 
 .convertor {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   &__value {
+    padding: 5px;
     font-size: 1.8rem;
     width: 150px;
   }
 
   &__symbol {
     width: 150px;
+    padding: 5px;
     font-size: 1.8rem;
-    margin-left: 20px;
+    margin: 20px 0;
   }
 
   &__btn {
-    padding: 5px 15px;
+    padding: 5px 40px;
     font-size: 1.8rem;
     letter-spacing: 1px;
     border: none;
     border-radius: 3px;
-    margin-left: 20px;
   }
 
   &__result {
-    font-size: 2rem;
+    margin-top: 20px;
+    font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: beige;
+    text-shadow: 2px 2px 2px black;
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    &__description {
+      font-size: 3rem;
+    }
+  }
+
+  .convertor {
+    &__value {
+      padding: 5px;
+      font-size: 2rem;
+      width: 180px;
+    }
+
+    &__symbol {
+      width: 180px;
+      padding: 5px;
+      font-size: 2rem;
+    }
+
+    &__btn {
+      padding: 10px 50px;
+      font-size: 2rem;
+    }
+
+    &__result {
+      margin-top: 30px;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .form {
+    width: 75%;
+
+    &__description {
+      font-size: 3rem;
+    }
+  }
+
+  .convertor {
+    flex-direction: row;
+    align-items: baseline;
+
+    &__value {
+      padding: 5px;
+      font-size: 2rem;
+      width: 150px;
+    }
+
+    &__symbol {
+      width: 150px;
+      padding: 5px;
+      font-size: 2rem;
+      margin: 0 10px;
+    }
+
+    &__btn {
+      padding: 6px 30px;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    &__result {
+      margin-left: 10px;
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: beige;
+      text-shadow: 2px 2px 2px black;
+    }
   }
 }

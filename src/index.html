@@ -12,9 +12,16 @@
 <body>
 <div class="wrapper">
   <header class="header">
-    <img class="header__logo" src="./images/bitcoin.jpg" alt="bitcoin" width="150" height="150">
     <h1 class="header__heading">Przelicznik walut</h1>
+    <img class="header__logo" src="./images/bitcoin.jpg" alt="bitcoin" width="150" height="150">
   </header>
+
+  <section class="gif">
+    <div>
+      <iframe title="gif" src="https://gifer.com/embed/PVtR" width="20%" height="100%">
+      </iframe>
+    </div>
+  </section>
 
   <form class="form">
     <fieldset class="form__border">
@@ -22,20 +29,16 @@
       <section class="convertor">
         <input class="convertor__value" type="text">
         <select class="convertor__symbol" name="convertorSymbol" id="convertorSymbol">
-          <option value="euro">EUR</option>
-          <option value="dolar">USD</option>
-          <option value="frank">CHF</option>
+          <option>EUR</option>
+          <option>USD</option>
+          <option>CHF</option>
         </select>
-
         <button class="convertor__btn" type="submit">Przelicz</button>
-
         <p class="convertor__result">To jest tyle złoty</p>
       </section>
     </fieldset>
-
   </form>
-
 </div>
+<script src="js/app.js"></script>
 </body>
-
 </html>
